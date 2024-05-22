@@ -203,6 +203,33 @@ write.csv(transmission_frame_continent, file="transmission_frame_continent.csv",
 - blastP
 
 ## Genome annotation, resistance genes
+- AMRfinderPlus v.3.11.2
+- Prokka v. 1.14.6. (https://github.com/tseemann/prokka)
+- prokka_all.sh (custom script)
+```
+#!/usr/bin/env bash 
+
+#Set output folder
+folder=$1
+
+#Activate conda environemnt
+#conda activate prokka
+
+#Get lists for sequences in folder
+ls *.fasta  > R1_list.txt
+
+#Generate assemblies from all fastq.gz files in folger
+while read -r sequence; do
+	echo ${sequence} > sequence.txt
+	output_folder=$(sed -re "s/\\.fasta//" sequence.txt)
+	echo "Generating annotation from ${sequence} into ${folder}/${output_folder}"
+	prokka --outdir ${folder}/${output_folder} ${sequence} --force 	
+	rm sequence.txt
+done < R1_list.txt
+
+#Remove sequence lists
+rm R1_list.txt
+```
 - ariba v. XXXX (https://github.com/sanger-pathogens/ariba)
 - Mab_ariba (https://github.com/samlipworth/Mab_ariba)
 - MAC_ariba_analyser.R (custom script)
@@ -368,33 +395,6 @@ summary(as.factor(heatmap_frame$rrs_code))
 #Write output frame to csv
 write.csv(file="ariba_summary/output_frame.csv",output_frame,row.names = FALSE)
 
-```
-- AMRfinderPlus v.3.11.2
-- Prokka v. 1.14.6. (https://github.com/tseemann/prokka)
-- prokka_all.sh
-```
-#!/usr/bin/env bash 
-
-#Set output folder
-folder=$1
-
-#Activate conda environemnt
-#conda activate prokka
-
-#Get lists for sequences in folder
-ls *.fasta  > R1_list.txt
-
-#Generate assemblies from all fastq.gz files in folger
-while read -r sequence; do
-	echo ${sequence} > sequence.txt
-	output_folder=$(sed -re "s/\\.fasta//" sequence.txt)
-	echo "Generating annotation from ${sequence} into ${folder}/${output_folder}"
-	prokka --outdir ${folder}/${output_folder} ${sequence} --force 	
-	rm sequence.txt
-done < R1_list.txt
-
-#Remove sequence lists
-rm R1_list.txt
 ```
 
 ## Network analysis
