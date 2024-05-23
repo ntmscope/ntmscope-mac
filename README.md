@@ -20,9 +20,11 @@ Dependencies of the used bioinformatical tools are not shown.
 
 ## Removal of adapter sequences
 - Fastp v. 0.23.2 (https://github.com/OpenGene/fastp)
+- starter_fastp_DefaultSettings.sh
 
 ## Simulation of reads for assembled sequence data
 - dwgsim v. 0.1.12-13 (https://github.com/nh13/DWGSIM)
+- starter_dwgsim_artificial_fastq.v01_MD3.sh
 
 ## Species designation
 - NTMprofiler (https://github.com/jodyphelan/NTM-Profiler)
@@ -59,7 +61,7 @@ raxmlHPC -f a -m GTRGAMMA -s XX_amended_u95_phylo.fasta -n YOUR_NAME -x 12345 -p
 - starter_customDB_SRST2.sh and customDB_to_SRST2.db
 - Roary v.3.13.0  (https://github.com/sanger-pathogens/Roary/blob/master/README.md)
 
-## Genome annotation, resistance genes
+## Resistance prediction
 - AMRfinderPlus v.3.11.2
 - ariba v. 2.14.4 (https://github.com/sanger-pathogens/ariba)
 - Mab_ariba (https://github.com/samlipworth/Mab_ariba)
