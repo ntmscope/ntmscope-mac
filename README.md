@@ -15,7 +15,7 @@ Dependencies of the used bioinformatical tools are not shown.
 
 ## Quality control
 - Fastqc v. 0.11.9 (https://github.com/s-andrews/FastQC)
-- scripts/fastqc_all.sh (custom script)
+- fastqc_all.sh (custom script)
 - Multiqc v. 1.13 (https://multiqc.info/)
 
 ## Removal of adapter sequences
