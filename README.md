@@ -54,7 +54,8 @@ raxmlHPC -f a -m GTRGAMMA -s XX_amended_u95_phylo.fasta -n YOUR_NAME -x 12345 -p
 - prokka_all.sh (custom script)
   
 ## Plasmid analysis
-- SRST2 v.0.2.0 (https://katholt.github.io/srst2/) using a custom database of 152 NTM plasmids downloaded from PLSDB v.2021-06-23-v2 
+- SRST2 v.0.2.0 (https://katholt.github.io/srst2/) using a custom database of 152 NTM plasmids downloaded from PLSDB v.2021-06-23-v2
+- starter_customDB_SRST2.sh and customDB_to_SRST2.db
 - Roary v.3.13.0  (https://github.com/sanger-pathogens/Roary/blob/master/README.md)
 
 ## Genome annotation, resistance genes
