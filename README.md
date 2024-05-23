@@ -44,7 +44,8 @@ raxmlHPC -f a -m GTRGAMMA -s XX_amended_u95_phylo.fasta -n YOUR_NAME -x 12345 -p
 ```
 - shovill v. 1.1.0 (https://github.com/tseemann/shovill)
 - shovil_all.sh (custom script)
-- Mashtree v.1.2.0 
+- Mashtree v.1.2.0
+- starter_Mashtree.sh
 - transmission_cluster_identifier.R (custom script)
 - Microreact (https://microreact.org/)
 - Microreact project (https://microreact.org/project/wUatE2dwuoHnCH7G4petvb-ntmscope-mac)
