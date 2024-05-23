@@ -11,7 +11,7 @@ Further information on NTMscope-related projects can be found on https://www.ntm
 Dependencies of the used bioinformatical tools are not shown.
 
 ## NTMseq pipeline
-- NTMseq pipeline (https://github.com/ngs-fzb/NTMtools/tree/main/scripts/NTMseq)
+- Most of the scripts below have been implemented in the NTMseq pipeline (Most recent version on https://github.com/ngs-fzb/NTMtools/tree/main/scripts/NTMseq)
 
 ## Quality control
 - Fastqc v. 0.11.9 (https://github.com/s-andrews/FastQC)
@@ -44,20 +44,21 @@ raxmlHPC -f a -m GTRGAMMA -s XX_amended_u95_phylo.fasta -n YOUR_NAME -x 12345 -p
 ```
 - shovill v. 1.1.0 (https://github.com/tseemann/shovill)
 - shovil_all.sh (custom script)
-- Mashdistance (V XXXX HOW WAS THIS DONE???)
+- Mashtree v.1.2.0 
 - transmission_cluster_identifier.R (custom script)
 - Microreact (https://microreact.org/)
 - Microreact project (https://microreact.org/project/wUatE2dwuoHnCH7G4petvb-ntmscope-mac)
-
+  
+## Genome annotation
+- Prokka v. 1.14.6. (https://github.com/tseemann/prokka)
+- prokka_all.sh (custom script)
+  
 ## Plasmid analysis
-- SRST v.0.2.0 (https://katholt.github.io/srst2/)
-- Roary v. XXXXX (https://github.com/sanger-pathogens/Roary/blob/master/README.md)
-- blastP v XXX
+- SRST2 v.0.2.0 (https://katholt.github.io/srst2/) using a custom database of 152 NTM plasmids downloaded from PLSDB v.2021-06-23-v2 
+- Roary v.3.13.0  (https://github.com/sanger-pathogens/Roary/blob/master/README.md)
 
 ## Genome annotation, resistance genes
 - AMRfinderPlus v.3.11.2
-- Prokka v. 1.14.6. (https://github.com/tseemann/prokka)
-- prokka_all.sh (custom script)
 - ariba v. 2.14.4 (https://github.com/sanger-pathogens/ariba)
 - Mab_ariba (https://github.com/samlipworth/Mab_ariba)
 - MAC_ariba_analyser.R (custom script)
