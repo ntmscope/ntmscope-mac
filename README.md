@@ -27,7 +27,7 @@ Dependencies of the used bioinformatical tools are not shown.
 - starter_dwgsim_artificial_fastq.v01_MD3.sh
 
 ## Species designation
-- NTMprofiler (https://github.com/jodyphelan/NTM-Profiler)
+- NTM-Profiler v. 0.2.0 (https://github.com/jodyphelan/NTM-Profiler)
 - ntm_profiler_all.sh (custom script)
 - ntm_profiler_extractor.R (custom script)
 - Type Strain Genome Server, TYGS (https://tygs.dsmz.de/)
