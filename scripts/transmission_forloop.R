@@ -3,7 +3,7 @@ library(lubridate)
 library(DescTools)
 
 #For loop for possible transmission occasion between all possible patients-------
-setwd("/home/nils/Desktop/NTM/10_ntmscope_MAC/ntmscope_MAC_network/output_tma")
+setwd("YOUR_FOLDER")
 
 #Create file for output
 patients_combs$tm_no <- NULL #reset results
