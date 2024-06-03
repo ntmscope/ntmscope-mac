@@ -2,7 +2,7 @@
 This repository comprizes essential scripts and code that have been used in the bioinformatical analyses of the whole genome sequencing project **NTMscope-MAC**. Single bioinformatic tools are summarized below. Sequencing data can be accessed in the European Nucleotide Archive under project number **PRJEB70863**. 
 \
 \
-An additional interactive visualisation of our dataset can be accessed via https://microreact.org/project/wUatE2dwuoHnCH7G4petvb-ntmscope-mac.
+An additional interactive visualisation of our dataset can be accessed via https://microreact.org/project/ntmscope-mac.
 \
 \
 Further information on NTMscope-related projects can be found on https://www.ntmscope.org. 
